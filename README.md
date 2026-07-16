@@ -25,7 +25,7 @@ App AR educativa donde los planetas del sistema solar orbitan en el espacio real
 |Ecos Odicio |2221898946 | Líder del proyecto |
 |Ecos Odicio |2221898946 | Desarrollador AR/VR |
 |Ecos Odicio |2221898946 | Diseñador UX/3D |
-|Delgado Joshue | | QA / Documentación |
+|Delgado Joshue |2221899181 | QA / Documentación |
 
 ---
 

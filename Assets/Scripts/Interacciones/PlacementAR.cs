@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -10,37 +9,49 @@ public class PlacementAR : MonoBehaviour
     public ARRaycastManager raycastManager;
     public GameObject instructionsPanel;
 
+    [Header("Ajustes de colocación")]
+    public Camera arCamera;
+    public float spawnForwardOffset = 1.0f; // metros hacia adelante de la cámara
+    public float placementScale = 0.3f;     // escala inicial (ajusta según el tamaño real de tu prefab)
+
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
     private GameObject spawnedObject;
 
+    void Start()
+    {
+        if (arCamera == null)
+            arCamera = Camera.main;
+    }
+
     void Update()
     {
-        // Bloquear si el panel está abierto
         if (instructionsPanel != null && instructionsPanel.activeSelf)
             return;
 
-        // Detectar toque
         if (Input.touchCount == 0)
             return;
 
         Touch touch = Input.GetTouch(0);
 
-        if (touch.phase == TouchPhase.Began)
+        if (touch.phase == TouchPhase.Began && spawnedObject == null)
         {
             if (raycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
             {
                 Pose pose = hits[0].pose;
 
-                // Instanciar una sola vez
-                if (spawnedObject == null)
-                {
-                    spawnedObject = Instantiate(prefab, pose.position, pose.rotation);
-                }
-                else
-                {
-                    // mover si ya existe
-                    spawnedObject.transform.position = pose.position;
-                }
+                // Desplazamos el punto de colocación hacia adelante de la cámara
+                // (proyectado sobre el plano horizontal) para no aparecer justo debajo del usuario
+                Vector3 forwardFlat = arCamera.transform.forward;
+                forwardFlat.y = 0;
+                forwardFlat.Normalize();
+
+                Vector3 spawnPosition = pose.position + forwardFlat * spawnForwardOffset;
+
+                spawnedObject = Instantiate(prefab, spawnPosition, pose.rotation);
+                spawnedObject.transform.localScale *= placementScale;
+
+                PlanetSelector.Instance.RegisterSolarSystem(spawnedObject);
+                PlanetFocusController.Instance.SetSolarSystemRoot(spawnedObject.transform);
             }
         }
     }
