@@ -22,10 +22,10 @@ App AR educativa donde los planetas del sistema solar orbitan en el espacio real
 
 | Nombre | Código | Rol |
 |--------|--------|-----|
-| | | Líder del proyecto |
-| | | Desarrollador AR/VR |
-| | | Diseñador UX/3D |
-| | | QA / Documentación |
+|Ecos Odicio |2221898946 | Líder del proyecto |
+|Ecos Odicio |2221898946 | Desarrollador AR/VR |
+|Ecos Odicio |2221898946 | Diseñador UX/3D |
+|Delgado Joshue |2221899181 | QA / Documentación |
 
 ---
 
@@ -58,11 +58,11 @@ cd rva-g02-sistema-solar-ra
 
 | Semanas | Hito | Estado |
 |---------|------|--------|
-| S01-S02 | Investigación y planteamiento del problema + idea inicial del proyecto | ⏳ Pendiente |
-| S03-S04 | Definición del MVP (Minimum Viable Product) + arquitectura técnica | ⏳ Pendiente |
-| S05-S06 | Prototipo básico funcional — primera iteración con Unity | ⏳ Pendiente |
-| S07-S08 | Funcionalidades de interacción implementadas | ⏳ Pendiente |
-| S09-S10 | Escenarios 3D y UI/UX del proyecto | ⏳ Pendiente |
+| S01-S02 | Investigación y planteamiento del problema + idea inicial del proyecto | ✅ Listo |
+| S03-S04 | Definición del MVP (Minimum Viable Product) + arquitectura técnica | ✅ Listo |
+| S05-S06 | Prototipo básico funcional — primera iteración con Unity | ✅ Listo |
+| S07-S08 | Funcionalidades de interacción implementadas | ✅ Listo |
+| S09-S10 | Escenarios 3D y UI/UX del proyecto | ✅ Listo |
 | S11-S12 | Integración de datos / features especiales del proyecto | ⏳ Pendiente |
 | S13-S14 | Audio, optimización y pruebas de usabilidad | ⏳ Pendiente |
 | S15-S16 | Proyecto final completo + presentación | ⏳ Pendiente |
