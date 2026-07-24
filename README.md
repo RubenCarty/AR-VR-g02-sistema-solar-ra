@@ -103,7 +103,7 @@ rva-g02-sistema-solar-ra/
 ## Video Demo
 
 > 📹 Agregar link al video demo aquí (YouTube/Drive)
-
+[Sistemal Solar AR - Grupo 02](https://youtu.be/1whISbB3JEQ)
 ---
 
 ## Licencia
