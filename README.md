@@ -63,9 +63,9 @@ cd rva-g02-sistema-solar-ra
 | S05-S06 | Prototipo básico funcional — primera iteración con Unity | ✅ Listo |
 | S07-S08 | Funcionalidades de interacción implementadas | ✅ Listo |
 | S09-S10 | Escenarios 3D y UI/UX del proyecto | ✅ Listo |
-| S11-S12 | Integración de datos / features especiales del proyecto | ⏳ Pendiente |
-| S13-S14 | Audio, optimización y pruebas de usabilidad | ⏳ Pendiente |
-| S15-S16 | Proyecto final completo + presentación | ⏳ Pendiente |
+| S11-S12 | Integración de datos / features especiales del proyecto | ✅ Listo |
+| S13-S14 | Audio, optimización y pruebas de usabilidad | ✅ Listo |
+| S15-S16 | Proyecto final completo + presentación | ✅ Listo |
 
 ---
 
@@ -103,7 +103,7 @@ rva-g02-sistema-solar-ra/
 ## Video Demo
 
 > 📹 Agregar link al video demo aquí (YouTube/Drive)
-
+[Sistemal Solar AR - Grupo 02](https://youtu.be/1whISbB3JEQ)
 ---
 
 ## Licencia
